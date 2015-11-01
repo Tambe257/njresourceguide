@@ -1,0 +1,41 @@
+@media (max-width: 480px) {
+  .ads {
+    text-align: center;
+  } 
+
+  .ads img {
+    margin: 5px 0;
+  }
+  
+  .credit {
+    float: none;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .image-wrapper {
+    margin: 5px 0;
+  }
+}
+
+@media (min-width: 481px ) AND (max-width: 640px) {
+
+}
+
+@media only screen and (min-width: 40.0625em) {
+  .image-wrapper {
+    margin: 5px 0;
+  }
+
+  .top-bar-section li a {
+    font-size: 0.8rem !important;
+  }
+}
+
+@media(max-width: 667px) and (orientation: landscape) {
+  .image-wrapper {
+    margin: 5px 0;
+  }
+}
