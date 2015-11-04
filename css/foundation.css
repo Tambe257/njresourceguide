@@ -3032,7 +3032,7 @@ meta.foundation-mq-topbar {
     .orbit-container .orbit-prev > span {
       border-right-style: solid;
       border-color: transparent;
-      border-right-color: #FFFFFF; }
+      border-right-color: #333333; }
     .orbit-container .orbit-prev:hover > span {
       border-right-color: #FFFFFF; }
   .orbit-container .orbit-next {
@@ -3040,7 +3040,7 @@ meta.foundation-mq-topbar {
     .orbit-container .orbit-next > span {
       border-color: transparent;
       border-left-style: solid;
-      border-left-color: #FFFFFF;
+      border-left-color: #333333;
       left: 50%;
       margin-left: -4px; }
     .orbit-container .orbit-next:hover > span {
