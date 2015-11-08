@@ -1,5 +1,10 @@
+.guide-container ul > li > img {
+  max-height: 1200px;
+}
+
 .guide-page-title {
-  text-align: center;  
+  text-align: center;
+  padding: 15px 0;
 }
 
 .guide-title {
