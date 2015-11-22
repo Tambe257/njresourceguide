@@ -27,6 +27,10 @@
 
 .size-72 { font-size: 72px; }
 
+
+body {
+  background: #fff url(../img/overlay.png) repeat;
+}
 /* nav */
 
 .top-bar {
@@ -35,6 +39,10 @@
 
 .top-bar .name {
   margin: 3px 0 0 0;
+}
+
+.top-bar-section ul {
+  margin-left: 10%;  
 }
 
 .top-bar-section li {
@@ -64,7 +72,7 @@ p.welcome {
   -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, transparent), color-stop(0.5, grey), color-stop(0.5, grey), color-stop(1, transparent)) 0 100% 0 0;
 }
 
-/* content section */
+/* home page content section */
 
 .contact {
   width: 100%;
@@ -95,6 +103,21 @@ p.welcome {
 
 .guide-preview a > img{
   max-height: 369px;  
+}
+
+.guide-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 90%;
+}
+
+.guide-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100vh;
 }
 
 .header-divider {
@@ -314,6 +337,7 @@ hr.hrcontact {
 }
 
 /* video wrapper */
+
 .videoWrapper {
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
@@ -363,4 +387,107 @@ p.video-title {
 
 p.video-specs {
   
+}
+
+.pagination-centered {
+  margin: 2rem 0 1rem 0;
+}
+
+/* contact page */
+
+.contact-page.panel a {
+  font: 1.4rem "Avenir Next";
+  color: #fff;
+  margin-top: 10px;
+}
+
+.contact-page-divider {
+  overflow: hidden;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+  margin: 30px 0;
+}
+.contact-page.panel {
+  margin: 3rem auto;
+  border: 2px solid #444;
+  background: #333; 
+  text-align: center;
+}
+
+.contact-page.panel p {
+  font: 1.4rem "Avenir Next";
+  padding: 1rem 2rem 1rem 2rem;
+  color: white;
+}
+
+.contact-page-link {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact-page.panel p span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 75%;
+  font-weight: bold; 
+}
+
+.contact-page.panel .sign {
+  background: #fff;
+  width: 150px;
+  height: 2.4rem;
+  border: 2px solid #444;
+  position: relative;
+  top: -2.5rem;
+  margin: auto; 
+}
+
+.contact-page.panel .sign h1 {
+  text-transform: uppercase;
+  font: bolder 0.875rem "Avenir Next";
+  letter-spacing: 3px;
+  color: #666;
+  font-size: 70%;
+  text-align: center;
+  line-height: 2rem; 
+}
+
+.contact-page-section {
+  width: 100%;
+  background-color: #008CBA;
+  color: white;
+  font-size: 1.3rem;
+  padding: 5px;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.contact-page-section i {
+  top: 1px;
+  right: 8px;
+  position: relative;
+}
+
+.contact-section {
+  margin-top: -10px;
+}
+
+p.phone {
+  padding: 0.5rem 2rem !important;
+  margin: 0;
+}
+
+/* About Page */
+
+.about-title {
+  text-align: center;
+  margin: 30px 0 15px 0;
+}
+
+li.head {
+  text-decoration: underline;
+  font-weight: bold;
+  list-style-type: none;
 }
