@@ -491,3 +491,22 @@ li.head {
   font-weight: bold;
   list-style-type: none;
 }
+
+.bio-content p {
+  margin-top: 15px;  
+}
+
+.bio-pic {
+  text-align: center;
+}
+
+.bio-pic img {
+  max-height: 120px;
+}
+
+.bio-title {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
