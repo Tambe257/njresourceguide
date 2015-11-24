@@ -1,9 +1,28 @@
+$primary-color: #333;
+$secondary-color: #008CBA;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
 .divider {
   overflow: hidden;
   clear: both;
   border: 0;
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 30px 0;
+}
+
+.header-divider {
+  overflow: hidden;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
   margin: 30px 0;
 }
 
@@ -56,7 +75,7 @@ body {
 }
 
 .top-bar-section li a:hover {
-  background-color: #008CBA !important;
+  background-color: $secondary-color !important;
 }
 
 /* top section */
@@ -76,7 +95,7 @@ p.welcome {
 
 .contact {
   width: 100%;
-  background-color: #008CBA;
+  background-color: $secondary-color;
   color: white;
   font-size: 1.3rem;
   padding: 5px;
@@ -131,7 +150,7 @@ p.welcome {
 .header.panel {
   margin: 3rem auto;
   border: 2px solid #444;
-  background: #333; 
+  background: $primary-color; 
   text-align: center;
 }
 
@@ -154,9 +173,9 @@ ul.header-list {
 }
 
 ul.header-list li a {
-  color: #008CBA;
+  color: $secondary-color;
   font: 1rem "Avenir Next" !important;
-  color: #2BA6CB !important;
+  color: $secondary-color !important;
 }
 
 ul.header-list li a:hover {
@@ -177,7 +196,7 @@ ul.header-list li {
 
 .header.panel a {
   font: 1.4rem "Avenir Next";
-  color: #2BA6CB;
+  color: $secondary-color;
   margin-top: 10px;
 }
 
@@ -210,7 +229,7 @@ ul.header-list li {
 
 .image-container {
   height: 350px;
-  background-color: #333333;
+  background-color: $primary-color;
   color: white;
 }
 
@@ -412,7 +431,7 @@ p.video-specs {
 .contact-page.panel {
   margin: 3rem auto;
   border: 2px solid #444;
-  background: #333; 
+  background: $primary-color; 
   text-align: center;
 }
 
@@ -456,7 +475,7 @@ p.video-specs {
 
 .contact-page-section {
   width: 100%;
-  background-color: #008CBA;
+  background-color: $secondary-color;
   color: white;
   font-size: 1.3rem;
   padding: 5px;
@@ -496,12 +515,39 @@ li.head {
   margin-top: 15px;  
 }
 
+.bio-info ul {
+  list-style: none;
+  float: left;
+  text-align: left;
+  margin-top: 5%;
+}
+
+.bio-info ul li {
+  color: white;  
+}
+
+.bio-name {
+  text-align: left;
+  margin-top: 2%;
+}
+
+.bio-name h2,
+.bio-name h3,
+.bio-name h4,
+.bio-name h5 {
+  color: white; 
+}
+
 .bio-pic {
-  text-align: center;
+  text-align: right;
 }
 
 .bio-pic img {
   max-height: 120px;
+}
+
+.bio-section {
+  @include border-radius(5px);
 }
 
 .bio-title {
