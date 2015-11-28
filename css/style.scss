@@ -8,6 +8,14 @@ $secondary-color: #008CBA;
   border-radius: $radius;
 }
 
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
 .divider {
   overflow: hidden;
   clear: both;
@@ -515,20 +523,25 @@ li.head {
   margin-top: 15px;  
 }
 
-.bio-info ul {
+.bio-list {
+  display: inline-block;
+  height: 200px;
+}
+
+.bio-name ul {
   list-style: none;
   float: left;
   text-align: left;
-  margin-top: 5%;
+  margin-top: 8%;
 }
 
-.bio-info ul li {
+.bio-name ul li {
   color: white;  
 }
 
 .bio-name {
   text-align: left;
-  margin-top: 2%;
+  @include vertical-align();
 }
 
 .bio-name h2,
@@ -540,6 +553,7 @@ li.head {
 
 .bio-pic {
   text-align: right;
+  @include vertical-align();
 }
 
 .bio-pic img {

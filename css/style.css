@@ -429,18 +429,26 @@ li.head {
 .bio-content p {
   margin-top: 15px; }
 
-.bio-info ul {
+.bio-list {
+  display: inline-block;
+  height: 200px; }
+
+.bio-name ul {
   list-style: none;
   float: left;
   text-align: left;
-  margin-top: 5%; }
+  margin-top: 8%; }
 
-.bio-info ul li {
+.bio-name ul li {
   color: white; }
 
 .bio-name {
   text-align: left;
-  margin-top: 2%; }
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .bio-name h2,
 .bio-name h3,
@@ -449,7 +457,12 @@ li.head {
   color: white; }
 
 .bio-pic {
-  text-align: right; }
+  text-align: right;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 .bio-pic img {
   max-height: 120px; }
