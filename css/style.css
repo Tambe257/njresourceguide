@@ -1,3 +1,220 @@
+.guide-container ul > li > img {
+  max-height: 1200px; }
+
+.guide-page-title {
+  text-align: center;
+  padding: 15px 0; }
+
+.guide-title {
+  text-align: center; }
+
+.guide-preview {
+  text-align: center; }
+
+@media (max-width: 480px) {
+  .ads {
+    text-align: center; }
+
+  .ads img {
+    margin: 5px 0; }
+
+  .credit {
+    float: none; }
+
+  footer {
+    text-align: center; }
+
+  .image-wrapper {
+    margin: 5px 0; }
+
+  .about-title h1 {
+    font-size: 1.6rem; }
+
+  .header.panel p {
+    padding: 0; } }
+@media (min-width: 481px) and (max-width: 768px) {
+  .bio-name h2 {
+    font-size: 150%; }
+
+  .bio-name h4 {
+    font-size: 150%; } }
+@media only screen and (min-width: 40.0625em) {
+  .image-wrapper {
+    margin: 5px 0; } }
+@media (max-width: 667px) and (orientation: landscape) {
+  .image-wrapper {
+    margin: 5px 0; } }
+.green-titles {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: underline; }
+
+.green-page.panel {
+  margin: 3rem auto;
+  border: 2px solid #444;
+  background: #333;
+  text-align: center; }
+  .green-page.panel a {
+    font: 1.3rem "Avenir Next";
+    color: #fff;
+    margin-top: 10px; }
+  .green-page.panel p {
+    font: 1.4rem "Avenir Next";
+    padding: 1rem 2rem 1rem 2rem;
+    color: white; }
+  .green-page.panel p span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 75%;
+    font-weight: bold; }
+  .green-page.panel .sign {
+    background: #fff;
+    width: 150px;
+    height: 2.4rem;
+    border: 2px solid #444;
+    position: relative;
+    top: -2.5rem;
+    margin: auto; }
+  .green-page.panel .sign h1 {
+    text-transform: uppercase;
+    font: bolder 0.875rem "Avenir Next";
+    letter-spacing: 3px;
+    color: #666;
+    font-size: 70%;
+    text-align: center;
+    line-height: 2rem; }
+  .green-page.panel .green-page-section {
+    width: 100%;
+    background-color: #008CBA;
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px 5px 5px 5px;
+    text-align: center;
+    border-radius: 2px; }
+    .green-page.panel .green-page-section ul.going-green-list {
+      list-style-type: none; }
+      .green-page.panel .green-page-section ul.going-green-list li p {
+        font-size: 1rem;
+        color: white;
+        text-align: left; }
+
+.green-page-divider {
+  overflow: hidden;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.75), transparent);
+  margin: 30px 0; }
+
+.green-page-link {
+  text-align: center;
+  padding-top: 20px; }
+
+.dark-row {
+  background-color: #333; }
+
+.top-bar {
+  height: 55px; }
+
+.top-bar .name {
+  margin: 3px 0 0 0; }
+
+.top-bar-section ul {
+  margin-left: 10%; }
+
+.top-bar-section li {
+  height: 55px; }
+
+.top-bar-section li a {
+  height: 100%;
+  font-size: 0.9rem !important;
+  padding-top: 4px !important; }
+
+.top-bar-section li a:hover {
+  background-color: #008CBA !important; }
+
+hr.video-divider {
+  margin: 3px; }
+
+.video-info {
+  text-align: left;
+  margin-top: 15px; }
+
+.video-page-title {
+  text-align: center;
+  margin-top: 2%;
+  font-weight: bold; }
+
+p.video-title {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.8rem; }
+
+.video-preview {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px; }
+
+.video-preview iframe {
+  height: 215px; }
+
+.pagination-centered {
+  margin: 2rem 0 1rem 0; }
+
+.bio-content p {
+  margin-top: 15px; }
+
+.bio-list {
+  display: inline-block;
+  height: 200px; }
+
+.bio-name ul {
+  list-style: none;
+  float: left;
+  text-align: left;
+  margin-top: 8%; }
+
+.bio-name ul li {
+  color: white; }
+
+.bio-name {
+  text-align: left;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.bio-name h2,
+.bio-name h3,
+.bio-name h4,
+.bio-name h5 {
+  color: white; }
+
+.bio-pic {
+  text-align: right;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.bio-pic img {
+  max-height: 120px; }
+
+.bio-section {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+.bio-title {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-bottom: 35px; }
+
 .divider {
   overflow: hidden;
   clear: both;
@@ -46,30 +263,6 @@
 
 body {
   background: #fff url(../img/overlay.png) repeat; }
-
-/* nav */
-.dark-row {
-  background-color: #333; }
-
-.top-bar {
-  height: 55px; }
-
-.top-bar .name {
-  margin: 3px 0 0 0; }
-
-.top-bar-section ul {
-  margin-left: 10%; }
-
-.top-bar-section li {
-  height: 55px; }
-
-.top-bar-section li a {
-  height: 100%;
-  font-size: 0.9rem !important;
-  padding-top: 4px !important; }
-
-.top-bar-section li a:hover {
-  background-color: #008CBA !important; }
 
 /* top section */
 p.welcome {
@@ -316,35 +509,6 @@ hr.hrcontact {
   width: 100%;
   height: 100%; }
 
-/* video CSS */
-hr.video-divider {
-  margin: 3px; }
-
-.video-info {
-  text-align: left;
-  margin-top: 15px; }
-
-.video-page-title {
-  text-align: center;
-  margin-top: 2%;
-  font-weight: bold; }
-
-p.video-title {
-  text-align: left;
-  font-weight: bold;
-  font-size: 1.8rem; }
-
-.video-preview {
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px; }
-
-.video-preview iframe {
-  height: 215px; }
-
-.pagination-centered {
-  margin: 2rem 0 1rem 0; }
-
 /* contact page */
 .contact-page.panel a {
   font: 1.4rem "Avenir Next";
@@ -428,126 +592,5 @@ li.head {
   text-decoration: underline;
   font-weight: bold;
   list-style-type: none; }
-
-.bio-content p {
-  margin-top: 15px; }
-
-.bio-list {
-  display: inline-block;
-  height: 200px; }
-
-.bio-name ul {
-  list-style: none;
-  float: left;
-  text-align: left;
-  margin-top: 8%; }
-
-.bio-name ul li {
-  color: white; }
-
-.bio-name {
-  text-align: left;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.bio-name h2,
-.bio-name h3,
-.bio-name h4,
-.bio-name h5 {
-  color: white; }
-
-.bio-pic {
-  text-align: right;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.bio-pic img {
-  max-height: 120px; }
-
-.bio-section {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px; }
-
-.bio-title {
-  text-align: center;
-  text-decoration: underline;
-  font-weight: bold;
-  margin-bottom: 35px; }
-
-/* Going Green */
-.green-titles {
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: white;
-  text-decoration: underline; }
-
-.green-page.panel {
-  margin: 3rem auto;
-  border: 2px solid #444;
-  background: #333;
-  text-align: center; }
-  .green-page.panel a {
-    font: 1.3rem "Avenir Next";
-    color: #fff;
-    margin-top: 10px; }
-  .green-page.panel p {
-    font: 1.4rem "Avenir Next";
-    padding: 1rem 2rem 1rem 2rem;
-    color: white; }
-  .green-page.panel p span {
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 75%;
-    font-weight: bold; }
-  .green-page.panel .sign {
-    background: #fff;
-    width: 150px;
-    height: 2.4rem;
-    border: 2px solid #444;
-    position: relative;
-    top: -2.5rem;
-    margin: auto; }
-  .green-page.panel .sign h1 {
-    text-transform: uppercase;
-    font: bolder 0.875rem "Avenir Next";
-    letter-spacing: 3px;
-    color: #666;
-    font-size: 70%;
-    text-align: center;
-    line-height: 2rem; }
-  .green-page.panel .green-page-section {
-    width: 100%;
-    background-color: #008CBA;
-    color: white;
-    font-size: 1.3rem;
-    padding: 15px 5px 5px 5px;
-    text-align: center;
-    border-radius: 2px; }
-    .green-page.panel .green-page-section ul.going-green-list {
-      list-style-type: none; }
-      .green-page.panel .green-page-section ul.going-green-list li p {
-        font-size: 1rem;
-        color: white;
-        text-align: left; }
-
-.green-page-divider {
-  overflow: hidden;
-  clear: both;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.75), transparent);
-  margin: 30px 0; }
-
-.green-page-link {
-  text-align: center;
-  padding-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

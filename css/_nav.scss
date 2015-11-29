@@ -1,0 +1,28 @@
+.dark-row {
+  background-color: $primary-color;
+}
+.top-bar {
+  height: 55px;
+}
+
+.top-bar .name {
+  margin: 3px 0 0 0;
+}
+
+.top-bar-section ul {
+  margin-left: 10%;  
+}
+
+.top-bar-section li {
+  height: 55px;
+}
+
+.top-bar-section li a {
+  height: 100%;
+  font-size: 0.9rem !important;
+  padding-top: 4px !important;
+}
+
+.top-bar-section li a:hover {
+  background-color: $secondary-color !important;
+}
