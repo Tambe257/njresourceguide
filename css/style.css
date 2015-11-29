@@ -48,6 +48,9 @@ body {
   background: #fff url(../img/overlay.png) repeat; }
 
 /* nav */
+.dark-row {
+  background-color: #333; }
+
 .top-bar {
   height: 55px; }
 
