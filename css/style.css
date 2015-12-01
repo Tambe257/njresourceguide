@@ -215,6 +215,11 @@ p.video-title {
   font-weight: bold;
   margin-bottom: 35px; }
 
+.about-sayed {
+  margin: 25px 0px; }
+  .about-sayed img {
+    text-align: center; }
+
 .inspira-body {
   margin-top: 20px; }
   .inspira-body p {
@@ -222,7 +227,7 @@ p.video-title {
 
 .inspira-title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 10px 0px; }
 
@@ -230,6 +235,11 @@ p.video-title {
   font-size: 1rem;
   font-weight: 700;
   margin: 20px 0px; }
+
+.quick-tips h2 {
+  color: #008CBA; }
+.quick-tips h3 {
+  color: #008CBA; }
 
 .sub-heading {
   font-weight: 700;
