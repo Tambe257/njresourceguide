@@ -216,14 +216,34 @@ p.video-title {
   margin-bottom: 35px; }
 
 .about-sayed {
-  margin: 25px 0px; }
+  margin: 25px 0px;
+  background-color: white;
+  padding: 10px 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
   .about-sayed img {
     text-align: center; }
 
+.drsayed {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
 .inspira-body {
-  margin-top: 20px; }
+  margin-top: 20px;
+  background-color: #D8EEEE;
+  padding: 10px 35px; }
   .inspira-body p {
     margin: 10px 0px; }
+  .inspira-body img {
+    margin-left: 36%; }
+
+.inspira-right {
+  background-color: #ffffff;
+  margin-top: 20px; }
 
 .inspira-title {
   text-align: center;
@@ -236,10 +256,17 @@ p.video-title {
   font-weight: 700;
   margin: 20px 0px; }
 
-.quick-tips h2 {
-  color: #008CBA; }
-.quick-tips h3 {
-  color: #008CBA; }
+.quick-tips {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  margin: 10px 0;
+  background-color: white; }
+  .quick-tips h2 {
+    color: #008CBA; }
+  .quick-tips h3 {
+    color: #008CBA; }
 
 .sub-heading {
   font-weight: 700;
