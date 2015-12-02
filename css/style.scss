@@ -1,6 +1,6 @@
 $primary-color: #333;
 $secondary-color: #008CBA;
-$light-blue: #D8EEEE;
+$light-blue: #A7D3D3;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -253,7 +253,7 @@ hr.hrcontact {
   overflow: hidden;
   position: relative;
   text-align: center;
-  border-radius: 4px; 
+  @include border-radius(4px); 
 }
 
 .image-content {
@@ -437,7 +437,7 @@ hr.hrcontact {
   font-size: 1.3rem;
   padding: 5px;
   text-align: center;
-  border-radius: 2px;
+  @include border-radius(2px);
 }
 
 .contact-page-section i {

@@ -1,20 +1,31 @@
-.about-sayed {
+.about-doctor {
   margin: 25px 0px;
   background-color: white;
-  padding: 10px 10px;
+  padding: 20px 15px;
   @include border-radius(20px);
   
-  img {
-    text-align: center;
+  h4 {
+    margin-top: 15px;
+  }
+  
+  p {
+    margin-top: 15px;
+  }
+  
+  .profilepic {
+    
+    img {
+      margin: 0 20%;
+    }
+  
   }
 }
 
-.drsayed {
+.drprofile {
   @include border-radius(20px);
 }
 
 .inspira-body {
-  margin-top: 20px;
   background-color: $light-blue;
   padding: 10px 35px;
   
@@ -29,7 +40,8 @@
 
 .inspira-right {
   background-color: #ffffff;
-  margin-top: 20px;
+  -webkit-box-shadow: -10px 0 20px 0 #595959;
+  box-shadow: -2px 0 9px 0 #595959;
 }
 
 .inspira-title {
@@ -74,6 +86,7 @@
 
 ul.inspira-locations {
   list-style-type: none;
+  float: left;
   
   li {
     font-size: 0.9rem;
