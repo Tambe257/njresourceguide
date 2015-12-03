@@ -284,6 +284,56 @@ ul.inspira-locations {
   ul.inspira-locations li {
     font-size: 0.9rem; }
 
+.about-rhee {
+  margin: 25px 0px;
+  background-color: white;
+  padding: 20px 15px;
+  -webkit-box-shadow: -10px 0 20px 0 #595959;
+  box-shadow: -2px 0 9px 0 #595959; }
+  .about-rhee h4 {
+    margin-top: 15px; }
+  .about-rhee p {
+    margin-top: 15px; }
+
+.drprofile {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px; }
+
+.rhee-body {
+  background-color: White;
+  padding: 10px 35px; }
+  .rhee-body p {
+    margin: 10px 0px; }
+
+.rhee-right {
+  background-color: #ffffff;
+  -webkit-box-shadow: -10px 0 20px 0 #595959;
+  box-shadow: -2px 0 9px 0 #595959; }
+
+.rhee-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 10px 0px; }
+
+.rhee-title-right {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 20px 0px; }
+
+.sub-heading {
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 20px 0px; }
+
+ul.rhee-background {
+  float: left; }
+  ul.rhee-background li {
+    font-size: 0.9rem; }
+
 .divider {
   overflow: hidden;
   clear: both;
