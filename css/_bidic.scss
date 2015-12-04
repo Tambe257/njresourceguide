@@ -22,6 +22,10 @@
   }
 }
 
+.asalogo img {
+  margin: 0 35%;
+}
+
 .drprofile {
   @include border-radius(20px);
 }
@@ -67,6 +71,7 @@
 
 ul.bidic-background {
   float: left;
+  list-style-type: none;
   
   li {
     font-size: 0.9rem;
