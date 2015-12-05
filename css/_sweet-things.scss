@@ -1,0 +1,36 @@
+.owl-carousel {
+  margin: 20px 0;  
+}
+
+.owl-carousel .item{
+  margin: 3px;
+}
+
+.owl-carousel .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sweet-things-body {
+  background-color: white;
+}
+
+#sweet-things-banner {
+  height: 151px;
+  margin: 20px 0;
+  text-align: center;
+  
+  img {
+    @include vertical-align();
+  }
+}
+
+#sweet-things-logo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.sweet-things-top {
+  
+}

@@ -388,6 +388,35 @@ ul.bidic-background {
   ul.bidic-background li {
     font-size: 0.9rem; }
 
+.owl-carousel {
+  margin: 20px 0; }
+
+.owl-carousel .item {
+  margin: 3px; }
+
+.owl-carousel .item img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.sweet-things-body {
+  background-color: white; }
+
+#sweet-things-banner {
+  height: 151px;
+  margin: 20px 0;
+  text-align: center; }
+  #sweet-things-banner img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+
+#sweet-things-logo {
+  text-align: center;
+  margin: 20px 0; }
+
 .divider {
   overflow: hidden;
   clear: both;
