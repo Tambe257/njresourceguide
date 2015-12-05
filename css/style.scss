@@ -242,7 +242,14 @@ ul.header-list li {
 }
 
 .ads {
-margin-top: 30px;
+  margin-top: 30px;
+  .ads-container {
+    height: 190px;
+    text-align: center;
+    img {
+      @include vertical-align();    
+    }
+  }
 }
 
 hr.hrcontact {
