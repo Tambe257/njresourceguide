@@ -2,6 +2,22 @@ $primary-color: #333;
 $secondary-color: #008CBA;
 $light-blue: #A7D3D3;
 
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -17,6 +33,23 @@ $light-blue: #A7D3D3;
   transform: translateY(-50%);
 }
 
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin links($link: '#008CBA',  $hover: '#e62c25', $active: 'lighten($hover, 10%)', $focus: $hover, $visited: $link) {
+  &:link    { color: $link;    }
+  @if $visited {
+    &:visited { color: $visited; }
+  } @else {
+    &:visited { color: $link; }
+  }
+  &:hover   { color: $hover;   }
+  &:active  { color: $active;  }
+  &:focus   { color: $focus;   }
+}
 
 @import "guide";
 @import "mobile";

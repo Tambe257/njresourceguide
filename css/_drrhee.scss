@@ -14,7 +14,7 @@
   }
   
   .profilepic {
-    
+    text-align: center;
     img {
       
     }
@@ -36,6 +36,14 @@
   
   img {
     
+  }
+}
+
+.rhee-info-container {
+  height: 300px;
+  .rhee-info {
+    @include center-block();
+    @include vertical-align();
   }
 }
 

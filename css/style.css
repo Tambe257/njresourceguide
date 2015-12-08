@@ -18,6 +18,9 @@
   .ads img {
     margin: 5px 0; }
 
+  .contact-page.panel a {
+    font-size: 1.2rem !important; }
+
   .credit {
     float: none; }
 
@@ -165,43 +168,42 @@ p.video-title {
 .bio-content p {
   margin-top: 15px; }
 
-.bio-list {
-  display: inline-block;
-  height: 200px; }
-
-.bio-name ul {
-  list-style: none;
-  float: left;
-  text-align: left;
-  margin-top: 8%; }
-
-.bio-name ul li {
-  color: white; }
-
 .bio-name {
-  text-align: left;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.bio-name h2,
-.bio-name h3,
-.bio-name h4,
-.bio-name h5 {
-  color: white; }
+  height: 140px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .bio-name {
+      height: 200px; } }
+  @media (min-width: 1024px) {
+    .bio-name {
+      height: 200px; } }
+  .bio-name .bio-list {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: left; }
+  .bio-name h2,
+  .bio-name h3,
+  .bio-name h4,
+  .bio-name h5 {
+    color: white; }
+  .bio-name p {
+    padding: 0 !important; }
 
 .bio-pic {
-  text-align: right;
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%); }
-
-.bio-pic img {
-  max-height: 120px; }
+  text-align: center;
+  height: 200px; }
+  .bio-pic img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-height: 120px; }
 
 .bio-section {
   -webkit-border-radius: 5px;
@@ -294,6 +296,8 @@ ul.inspira-locations {
     margin-top: 15px; }
   .about-rhee p {
     margin-top: 15px; }
+  .about-rhee .profilepic {
+    text-align: center; }
 
 .drprofile {
   -webkit-border-radius: 20px;
@@ -306,6 +310,18 @@ ul.inspira-locations {
   padding: 10px 35px; }
   .rhee-body p {
     margin: 10px 0px; }
+
+.rhee-info-container {
+  height: 300px; }
+  .rhee-info-container .rhee-info {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
 
 .rhee-right {
   background-color: #ffffff;

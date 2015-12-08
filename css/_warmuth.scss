@@ -2,41 +2,43 @@
   margin-top: 15px;  
 }
 
-.bio-list {
-  display: inline-block;
-  height: 200px;
-}
-
-.bio-name ul {
-  list-style: none;
-  float: left;
-  text-align: left;
-  margin-top: 8%;
-}
-
-.bio-name ul li {
-  color: white;  
-}
-
 .bio-name {
-  text-align: left;
-  @include vertical-align();
-}
-
-.bio-name h2,
-.bio-name h3,
-.bio-name h4,
-.bio-name h5 {
-  color: white; 
+  height: 140px;
+  
+  @include tablet {
+    height: 200px;
+  }
+  
+  @include desktop {
+    height: 200px;
+  }
+  
+  .bio-list {
+    @include center-block();
+    @include vertical-align(); 
+    text-align: left;
+  }
+  
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: white;
+  }
+  
+  p {
+    padding: 0 !important;
+  }
 }
 
 .bio-pic {
-  text-align: right;
-  @include vertical-align();
-}
-
-.bio-pic img {
-  max-height: 120px;
+  text-align: center;
+  height: 200px;
+  
+  img {
+    @include vertical-align();
+    max-height: 120px;
+  }
 }
 
 .bio-section {

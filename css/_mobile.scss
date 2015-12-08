@@ -7,6 +7,10 @@
     margin: 5px 0;
   }
   
+  .contact-page.panel a {
+    font-size: 1.2rem !important;
+  }
+  
   .credit {
     float: none;
   }
@@ -26,6 +30,7 @@
   .header.panel p {
     padding: 0;
   }
+
 }
 
 @media (min-width: 481px ) AND (max-width: 768px) {
