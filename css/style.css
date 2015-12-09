@@ -31,10 +31,7 @@
     margin: 5px 0; }
 
   .about-title h1 {
-    font-size: 1.6rem; }
-
-  .header.panel p {
-    padding: 0; } }
+    font-size: 1.6rem; } }
 @media (min-width: 481px) and (max-width: 768px) {
   .bio-name h2 {
     font-size: 150%; }
@@ -166,37 +163,35 @@ p.video-title {
   margin: 2rem 0 1rem 0; }
 
 .bio-content p {
-  margin-top: 15px; }
+  padding: 0px; }
 
-.bio-name {
-  height: 140px; }
-  @media (min-width: 768px) and (max-width: 1023px) {
-    .bio-name {
-      height: 200px; } }
-  @media (min-width: 1024px) {
-    .bio-name {
-      height: 200px; } }
-  .bio-name .bio-list {
+.bio-section {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #333;
+  color: white; }
+  .bio-section .bio-name .bio-list {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     text-align: left; }
-  .bio-name h2,
-  .bio-name h3,
-  .bio-name h4,
-  .bio-name h5 {
+    .bio-section .bio-name .bio-list h3,
+    .bio-section .bio-name .bio-list h4 {
+      color: white; }
+  .bio-section .bio-name h2,
+  .bio-section .bio-name h3,
+  .bio-section .bio-name h4,
+  .bio-section .bio-name h5,
+  .bio-section .bio-name p {
     color: white; }
-  .bio-name p {
+  .bio-section .bio-name p {
     padding: 0 !important; }
 
 .bio-pic {
-  text-align: center;
-  height: 200px; }
+  text-align: center; }
   .bio-pic img {
     position: relative;
     top: 50%;
@@ -205,17 +200,15 @@ p.video-title {
     transform: translateY(-50%);
     max-height: 120px; }
 
-.bio-section {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px; }
-
 .bio-title {
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
   margin-bottom: 35px; }
+
+.warmuth-name {
+  font-size: 1.4rem;
+  margin: 10px 0; }
 
 .about-doctor {
   margin: 25px 0px;
@@ -360,9 +353,15 @@ ul.rhee-background {
     margin-top: 15px; }
   .about-bidic p {
     margin-top: 15px; }
+  .about-bidic .profilepic img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 .asalogo img {
-  margin: 0 35%; }
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .drprofile {
   -webkit-border-radius: 20px;
@@ -372,7 +371,8 @@ ul.rhee-background {
 
 .bidic-body {
   background-color: White;
-  padding: 10px 35px; }
+  padding: 10px 35px;
+  overflow: hidden; }
   .bidic-body p {
     margin: 10px 0px; }
 
@@ -551,7 +551,6 @@ p.welcome {
 
 .header.panel p {
   font: 1rem "Avenir Next";
-  padding: 2rem 2rem 1rem 2rem;
   color: white; }
 
 .header-link {
@@ -615,6 +614,9 @@ ul.header-list li {
   height: 350px;
   background-color: #333;
   color: white; }
+
+p.home-p {
+  padding: 5px 0px; }
 
 .credit {
   float: right; }

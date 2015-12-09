@@ -1,39 +1,51 @@
 .bio-content p {
-  margin-top: 15px;  
+  padding: 0px;
 }
 
-.bio-name {
-  height: 140px;
+.bio-section {
+  @include border-radius(5px);
+  overflow: hidden;
+  background-color: $primary-color;
+  color: white;
   
-  @include tablet {
-    height: 200px;
-  }
-  
-  @include desktop {
-    height: 200px;
-  }
-  
-  .bio-list {
-    @include center-block();
-    @include vertical-align(); 
-    text-align: left;
-  }
-  
-  h2,
-  h3,
-  h4,
-  h5 {
-    color: white;
-  }
-  
-  p {
-    padding: 0 !important;
+  .bio-name {
+
+    @include tablet {
+
+    }
+
+    @include desktop {
+
+    }
+
+    .bio-list {
+      @include center-block();
+      text-align: left;
+
+      h3,
+      h4 {
+        color: white;
+      }
+
+        
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+      color: white;
+    }
+
+    p {
+      padding: 0 !important;
+    }
   }
 }
 
 .bio-pic {
   text-align: center;
-  height: 200px;
   
   img {
     @include vertical-align();
@@ -41,13 +53,14 @@
   }
 }
 
-.bio-section {
-  @include border-radius(5px);
-}
-
 .bio-title {
   text-align: center;
   text-decoration: underline;
   font-weight: bold;
   margin-bottom: 35px;
+}
+
+.warmuth-name {
+  font-size: 1.4rem;
+  margin: 10px 0;
 }

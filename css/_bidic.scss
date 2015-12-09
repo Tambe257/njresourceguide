@@ -16,14 +16,14 @@
   .profilepic {
     
     img {
-      
+      @include center-block();
     }
   
   }
 }
 
 .asalogo img {
-  margin: 0 35%;
+  @include center-block();
 }
 
 .drprofile {
@@ -33,6 +33,7 @@
 .bidic-body {
   background-color: White;
   padding: 10px 35px;
+  overflow: hidden;
   
   p {
     margin: 10px 0px;
