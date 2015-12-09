@@ -172,12 +172,23 @@ p.video-title {
   border-radius: 5px;
   overflow: hidden;
   background-color: #333;
-  color: white; }
+  color: white;
+  margin: 3rem auto;
+  border: 2px solid #444;
+  text-align: center;
+  padding: 20px; }
   .bio-section .bio-name .bio-list {
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: left; }
+    .bio-section .bio-name .bio-list button {
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+      .bio-section .bio-name .bio-list button a {
+        color: white; }
     .bio-section .bio-name .bio-list h3,
     .bio-section .bio-name .bio-list h4 {
       color: white; }
@@ -189,6 +200,9 @@ p.video-title {
     color: white; }
   .bio-section .bio-name p {
     padding: 0 !important; }
+  @media (max-width: 638px) {
+    .bio-section img {
+      max-width: 250px; } }
 
 .bio-pic {
   text-align: center; }
@@ -222,8 +236,12 @@ p.video-title {
     margin-top: 15px; }
   .about-doctor p {
     margin-top: 15px; }
-  .about-doctor .profilepic img {
-    margin: 0 20%; }
+  .about-doctor .profilepic {
+    text-align: center; }
+    .about-doctor .profilepic img {
+      margin: 0 20%; }
+  .about-doctor .sayed-info {
+    text-align: center; }
 
 .drprofile {
   -webkit-border-radius: 20px;

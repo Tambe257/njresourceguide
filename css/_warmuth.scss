@@ -7,6 +7,10 @@
   overflow: hidden;
   background-color: $primary-color;
   color: white;
+  margin: 3rem auto;
+  border: 2px solid #444;
+  text-align: center;
+  padding: 20px;
   
   .bio-name {
 
@@ -22,6 +26,14 @@
       @include center-block();
       text-align: left;
 
+      button {
+        @include border-radius(5px);
+        
+        a {
+          color: white;
+        }
+      }
+      
       h3,
       h4 {
         color: white;
@@ -40,6 +52,13 @@
 
     p {
       padding: 0 !important;
+    }
+  }
+  
+  img {
+    
+    @include mobile {
+      max-width: 250px;
     }
   }
 }
