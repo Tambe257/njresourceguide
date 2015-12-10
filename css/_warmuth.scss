@@ -1,5 +1,11 @@
-.bio-content p {
-  padding: 0px;
+.bio-content { 
+  
+  .warmuth-content {
+    margin-top: 80px;
+    p {
+      padding: 0px;
+    }
+  }
 }
 
 .bio-section {
@@ -12,46 +18,50 @@
   text-align: center;
   padding: 20px;
   
-  .bio-name {
+  .staff-container {
+    margin-top: 40px;
+    
+    .bio-name {
 
-    @include tablet {
+      @include tablet {
 
-    }
+      }
 
-    @include desktop {
+      @include desktop {
 
-    }
+      }
 
-    .bio-list {
-      @include center-block();
-      text-align: left;
+      .bio-list {
+        @include center-block();
+        text-align: left;
 
-      button {
-        @include border-radius(5px);
-        
-        a {
+        button {
+          @include border-radius(5px);
+
+          a {
+            color: white;
+          }
+        }
+
+        h3,
+        h4 {
           color: white;
         }
+
+
       }
-      
+
+      h2,
       h3,
-      h4 {
+      h4,
+      h5,
+      p {
         color: white;
       }
 
-        
-    }
-
-    h2,
-    h3,
-    h4,
-    h5,
-    p {
-      color: white;
-    }
-
-    p {
-      padding: 0 !important;
+      p {
+        padding: 0 !important;
+      }
     }
   }
   

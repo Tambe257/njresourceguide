@@ -46,6 +46,13 @@ $desktop-width: 1024px;
   margin-right: auto;
 }
 
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @mixin links($link: '#008CBA',  $hover: '#e62c25', $active: 'lighten($hover, 10%)', $focus: $hover, $visited: $link) {
   &:link    { color: $link;    }
   @if $visited {
