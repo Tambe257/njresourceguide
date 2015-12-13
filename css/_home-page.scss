@@ -1,0 +1,203 @@
+/* top section */
+p.welcome {
+  margin: 14px auto;
+  font-family: Ariel;
+  font-size: 1.4rem;
+  padding: 5px;
+  line-height: 1.5;
+}
+
+.welcome-section {
+  -webkit-border-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(0, transparent), color-stop(0.5, grey), color-stop(0.5, grey), color-stop(1, transparent)) 0 100% 0 0;
+}
+
+/* home page content section */
+
+.contact {
+  width: 100%;
+  background-color: $secondary-color;
+  color: white;
+  font-size: 1.3rem;
+  padding: 5px;
+  text-align: center;
+}
+
+.contact i {
+  top: 3px;
+  right: 2px;
+  position: relative;
+}
+
+.contact-section {
+  margin-top: -10px;
+}
+
+.guide-orbit > li > img{
+  margin: 0 auto;  
+}
+
+.guide-preview {
+  margin-top: 15px;  
+}
+
+.guide-preview a > img{
+  max-height: 369px;  
+}
+
+.guide-container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 90%;
+}
+
+.guide-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100vh;
+}
+
+.header-divider {
+  overflow: hidden;
+  clear: both;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+  margin: 30px 0;
+}
+.header.panel {
+  margin: 3rem auto;
+  border: 2px solid #444;
+  background: $primary-color; 
+  text-align: center;
+}
+
+.header.panel p {
+  font: 1rem "Avenir Next";
+  color: white;
+}
+
+.header-link {
+  text-align: center;
+  padding-top: 20px;
+}
+
+ul.header-list {
+  list-style-type: none;
+  padding-left: 2rem;
+  margin-bottom: 15px !important;
+  margin-top: 25px;
+  text-align: left;
+}
+
+ul.header-list li a {
+  color: $secondary-color;
+  font: 1rem "Avenir Next" !important;
+  color: $secondary-color !important;
+}
+
+ul.header-list li a:hover {
+  color: white !important;
+}
+
+ul.header-list li a:before {
+  content:"-"; 
+  position:relative; 
+  left:-5px;
+  text-decoration: none;
+}
+
+
+ul.header-list li { 
+  margin-bottom: 5px; 
+}
+
+.header.panel a {
+  font: 1.4rem "Avenir Next";
+  color: $secondary-color;
+  margin-top: 10px;
+}
+
+.header.panel p span {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 75%;
+  font-weight: bold; 
+}
+
+.header.panel .sign {
+  background: #fff;
+  width: 150px;
+  height: 2.4rem;
+  border: 2px solid #444;
+  position: relative;
+  top: -2.5rem;
+  margin: auto; 
+}
+
+.header.panel .sign h1 {
+  text-transform: uppercase;
+  font: bolder 0.875rem "Avenir Next";
+  letter-spacing: 3px;
+  color: #666;
+  font-size: 70%;
+  text-align: center;
+  line-height: 2rem; 
+}
+
+.image-container {
+  height: 350px;
+  background-color: $primary-color;
+  color: white;
+}
+
+p.home-p {
+  padding: 5px 0px;
+}
+
+.credit {
+  float: right;
+}
+
+.ads {
+  margin-top: 30px;
+  .ads-container {
+    height: 190px;
+    text-align: center;
+    img {
+      @include vertical-align();    
+    }
+  }
+}
+
+hr.hrcontact {
+  margin: 0;
+}
+/* image overlay */
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  @include border-radius(4px); 
+}
+
+.image-content {
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  bottom: 0;
+  left: 0;
+  letter-spacing: 0.15em;
+  color: #f4f4f4;
+  font-size: 24px; 
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  padding: 26px;
+}

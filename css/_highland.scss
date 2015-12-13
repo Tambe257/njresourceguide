@@ -17,15 +17,15 @@
 }
 
 .highland-about-title {
-  text-align: center;
-  font-weight: 500;
-  font-size: 2rem;
-  margin: 30px 0px;
+  text-align  : center;
+  font-weight : 500;
+  font-size   : 2rem;
+  margin      : 30px 0px;
 }
 
 .highland-awards {
   text-align: center;
-  padding: 20px 0px;
+  padding: 30px 0px;
   background-color: white;
   
   img {
@@ -36,7 +36,7 @@
   p {
     font-size: 2rem;
     font-weight: 500;
-    margin: 20px 0px;
+    margin: 10px 0px;
   }
   
 }
@@ -51,7 +51,12 @@
 
 .highland-content {
   background-color: #E6C18F;
-  padding: 30px 0px;
+  padding: 40px 0px;
+  
+  .brands-title {
+    font-weight: 500;
+    font-size: 1.9rem;
+  }
   
   ul {
     
@@ -71,6 +76,13 @@
   padding: 20px 0px;
 }
 
+.highland-location-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+
 .highland-locations {
   width: 350px;
 }
@@ -87,6 +99,31 @@
   font-size: 2rem;
   font-family: "baskerville";
   margin: 15px 0px;
+}
+
+.highland-video-container {
+  height: 500px;
+  
+  .highland-videoWrapper {
+    @include vertical-align;
+    
+    iframe {
+      height: 315px;
+      width: 100%;
+    }
+  }
+}
+
+.highland-warehouse {
+  height: 500px;
+  
+  img {
+    margin: 15px 0px;
+  }
+  
+  p {
+    margin: 15px 0px;
+  }
 }
 
 .owl-carousel {
