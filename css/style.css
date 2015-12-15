@@ -1,3 +1,14 @@
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  zoom: 1; }
+
 .divider {
   overflow: hidden;
   clear: both;
@@ -825,7 +836,8 @@ ul.bidic-background {
 
 .highland-body {
   background-color: white;
-  font-family: "baskerville"; }
+  font-family: "baskerville";
+  overflow: hidden; }
 
 .highland-carousel {
   padding: 0px; }
@@ -852,9 +864,15 @@ ul.bidic-background {
   font-weight: 500;
   font-size: 2rem;
   margin-bottom: 25px; }
+  @media (max-width: 638px) {
+    .highland-location-title {
+      font-size: 1.6rem; } }
 
 .highland-locations {
   width: 350px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .highland-locations {
+      padding: 0; } }
 
 .highland-logo {
   text-align: center;
@@ -875,7 +893,8 @@ ul.bidic-background {
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    overflow: hidden; }
     .highland-video-container .highland-videoWrapper iframe {
       height: 315px;
       width: 100%; }
