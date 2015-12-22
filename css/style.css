@@ -361,6 +361,9 @@ p.phone {
 .guide-preview {
   text-align: center; }
 
+#mybook {
+  margin: 0 auto; }
+
 @media (max-width: 480px) {
   .ads {
     text-align: center; }
