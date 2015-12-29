@@ -359,7 +359,15 @@ p.phone {
   text-align: center; }
 
 .guide-preview {
-  text-align: center; }
+  text-align: center;
+  padding: 10px 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+.guide-preview:hover {
+  -webkit-box-shadow: -10px 0 20px 0 #595959;
+  box-shadow: -2px 0 9px 0 #595959;
+  background-color: white; }
 
 #mybook {
   margin: 0 auto; }
