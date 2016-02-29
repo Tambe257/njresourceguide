@@ -6,57 +6,22 @@
     <title>Cumberland-Salem County | Spring 2013</title>
     <link rel="stylesheet" href="../../css/foundation.css" />
     <link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="../../css/guide.css" />
-    <link rel="stylesheet" href="../../css/mobile.css" />
     <link rel="stylesheet" href="../../css/foundation-icons/foundation-icons.css" />
     <script src="../../js/vendor/modernizr.js"></script>
     <script src="../../js/vendor/jquery.js"></script>
     <script src="../../js/foundation.min.js"></script>
-    <script src="../../js/custom.js"></script>
+    
+    <!--    wowbook files  -->
+    <link rel="stylesheet" href="../../wow_book/wow_book.css" type="text/css" />
+    <script type="text/javascript" src="../../wow_book/pdf.combined.min.js"></script>
+    <script type="text/javascript" src="../../wow_book/wow_book.min.js"></script>
+    
   </head>
   <body>
-<!--   navbar section   -->
-    <div class="row">
-      <div class="large-12 columns">
-        <nav class="top-bar" data-topbar>
-          <ul class="title-area">
-            <li class="name">
-              <h1>
-                <a href="../../index.html">
-                  <img src="../../img/NJRG.png" alt="NJRG">
-                </a>
-              </h1>
-            </li>
-            <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-          </ul>
-
-          <section class="top-bar-section">
-            <ul class="left">
-                <li><a href="../../about.html">About Us</a></li>
-                <li><a href="../../resourceguide.html">Resource Guide</a></li>
-                <li><a href="../../videos.html">Videos</a></li>
-                <li><a href="../../contact.html">Contact Us</a></li>
-            </ul>
-          </section>
-        </nav>
-      </div>
+    <div class="book-container">
+      <div id="mybook"></div>
     </div>
-<!--  end navbar section -->
-
-    <div class="row">
-      <div class="guide-title">
-        <h1>Cumberland-Salem County Guide - Spring 2013</h1>
-        <div class="divider">&nbsp;</div>
-        <p>Scroll through the entire guide below!</p>
-      </div>
-    </div>
-    
-    <div class="row guide-container">
-    
-      <iframe src = "/ViewerJS/#../img/guides/cumberland-salem/2013-SPRING/spring-2013.pdf" width='724' height='860' allowfullscreen webkitallowfullscreen></iframe>
-  
-    </div>
-    
+   
     <footer class="row">
       <div class="large-12 columns">
         <hr>
@@ -73,7 +38,47 @@
         </div>
       </div>
     </footer>
-    
+    <script>
+		$(function(){
+
+			var bookOptions = {
+				height   : 500,
+				width    : 800,
+				// ,maxWidth : 800
+				maxHeight : 600,
+
+				centeredWhenClosed : true,
+				hardcovers : true,
+				// ,toolbar : "first, back, next, last, toc, zoomin, zoomout, slideshow, flipsound, fullscreen, thumbnails, download"
+				toolbar : "first, back, next, last, zoomin, zoomout, slideshow, flipsound, fullscreen, thumbnails, download",
+				thumbnailsPosition : 'left',
+				responsiveHandleWidth : 50,
+
+				lightbox: "#show_book", // "#show_book" does not exist but we will trigger the lightbox via javascript
+				// ,toolbarLightboxPosition: "top" // default "bottom"
+
+				// for pdf files, uncomment the tag script that loads the library "pdf.js".
+				// Then uncomment the line below. The pdf and your webpage must be on the same domain
+				pdf: "../../img/guides/cumberland-salem/2013-SPRING/spring-2013.pdf",
+
+				perspective: 4500,
+				// ,toc: [                    // table of contents in the format
+				// 	[ "Introduction", 2 ],  // [ "title", page number ]
+				// 	[ "Supported browsers", 5 ],
+				// 	[ "Optmizing PDF files", 6 ] // or [ "title", "url" ]
+				// ]
+			};
+
+			$('#mybook').wowBook( bookOptions ); // create the book
+
+			var book=$.wowBook("#mybook"); // get book object instance
+
+			book.showLightbox();
+
+			$(".wowbook-lightbox > .wowbook-close").remove(); // remove lightbox's close button
+
+		})
+	</script> 
     <script>
       $(document).foundation();
     </script>

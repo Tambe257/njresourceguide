@@ -135,6 +135,16 @@ p.welcome {
   background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.75), transparent);
   margin: 30px 0; }
 
+#content-row-1.header.panel {
+  height: 555px; }
+
+#content-row-2.header.panel {
+  height: 700px; }
+  #content-row-2.header.panel .box-1 img, #content-row-2.header.panel .box-1 div {
+    margin: 35px 0px; }
+  #content-row-2.header.panel .box-2 img, #content-row-2.header.panel .box-2 div {
+    margin: 13px 0px; }
+
 .header.panel {
   margin: 3rem auto;
   border: 2px solid #444;
@@ -364,11 +374,6 @@ p.phone {
   -webkit-transition: all .5s;
   transition: all .5s; }
 
-.guide-preview:hover {
-  -webkit-box-shadow: -10px 0 20px 0 #595959;
-  box-shadow: -2px 0 9px 0 #595959;
-  background-color: white; }
-
 #mybook {
   margin: 0 auto; }
 
@@ -511,6 +516,11 @@ p.video-title {
   text-align: left;
   font-weight: bold;
   font-size: 1.8rem; }
+
+p.video-title-sm {
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5rem; }
 
 .video-preview {
   text-align: center;

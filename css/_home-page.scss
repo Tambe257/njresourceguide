@@ -67,6 +67,28 @@ p.welcome {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
   margin: 30px 0;
 }
+
+#content-row-1.header.panel {
+  height: 555px;  
+}
+
+#content-row-2.header.panel {
+  height: 700px;
+  
+  .box-1 {
+    img, div {
+      margin: 35px 0px;
+    }
+  }
+
+  .box-2 {
+    img, div {
+      margin: 13px 0px;
+    }
+  }  
+  
+}
+
 .header.panel {
   margin: 3rem auto;
   border: 2px solid #444;
