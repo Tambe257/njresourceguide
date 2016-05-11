@@ -377,6 +377,9 @@ p.phone {
 #mybook {
   margin: 0 auto; }
 
+#book {
+  margin: 0 auto; }
+
 @media (max-width: 480px) {
   .ads {
     text-align: center; }
@@ -943,5 +946,3 @@ ul.bidic-background {
   display: block;
   width: 100%;
   height: auto; }
-
-/*# sourceMappingURL=style.css.map */
